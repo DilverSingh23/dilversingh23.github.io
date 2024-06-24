@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;
+    background-color: black;
+}
+.navbar {
+    height: 85px;
+    color:black;
+    background-color: black;
+    font-size: 15px;
+    font-family: 'Verdana', serif;
+    display: flex;
+    font-weight: 200;
+}
+
+.navbar img {
+    height: 84px;
+    padding-left: 150px;
+}
+
+.links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 250px;
+    margin-top: 30px;
+}
+
+.links ul{
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+.link a:hover {
+    transition: 0.3s ease-in-out;
+    color: white;
+    text-shadow: 0.8px 0.8px;
+}
+
+.link a:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    opacity: 0;
+    margin-top: 3px;
+}
+
+.link a:hover:after{
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.download {
+    margin-top: -10px;
+}
+
+.resume {
+    background-image: url(https://pastatic.picsart.com/71223921187331879964.jpg);
+    background-position: 300px;
+    background-size: cover;
+    color: white;
+    border: solid lightgray 2px;
+    text-transform: uppercase;
+    padding: 12px;
+    font-size: 13px;
+    border-radius: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 800;
+}
+
+.resume:hover {
+    border: solid white 2px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0.6px 0.6px;
+    transition: 0.3s;
+}
+
