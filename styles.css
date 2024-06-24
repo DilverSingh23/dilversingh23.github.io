@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html, body {
     margin: 0;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body {
+    flex: 1;
 }
 .navbar {
     height: 85px;
@@ -89,3 +98,61 @@ a:visited{
     transition: 0.3s;
 }
 
+#home-content{
+    display: flex;
+    color: white;
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 8.2em;
+    font-family: 'Poppins';
+    border: 2px solid white;
+}
+
+
+.profile-image {
+    display: flex;
+    animation: fadeIn 2s;
+    border: 4px solid white;
+    border-radius: 20em;
+    margin-right: 14.3em;
+}
+
+.profile-image img {
+    clip-path: circle();
+    height: 24vw;
+    width: 24vw;
+}
+
+.intro {
+    display: flex;
+    font-size: 2.08815vw;
+    font-weight: 800;
+    margin-bottom: 2em;
+    flex-direction: column;
+    animation: fadeIn 3.5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0};
+    100% {opacity: 1};
+}
+
+.title {
+    margin-bottom: 0;
+    flex-shrink: 1;
+}
+
+.job {
+    margin-top: 0;
+    flex-shrink: 1;
+}
+
+.footer {
+    color: white;
+    border: solid white 2px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
