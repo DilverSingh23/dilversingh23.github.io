@@ -1,16 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html, body {
     margin: 0;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
+
+body {
+    flex: 1;
+    background-image: url(//wallpapers.com/images/hd/neon-purple-grid-cs0ux354vnrgmmax.jpg);
+}
+
 .navbar {
     height: 85px;
     color:black;
-    background-color: black;
     font-size: 15px;
-    font-family: 'Verdana', serif;
+    font-family: 'Poppins', serif;
     display: flex;
     font-weight: 200;
     align-items: center;
+    margin-top: 5px;
 }
 
 .navbar img {
@@ -109,6 +120,52 @@ a:visited{
     margin-bottom: 5px;
 }
 
+.content {
+    display: flex;
+    color: white;
+    font-family: 'Poppins', 'Verdana';
+    font-size: 1.8vw;
+    flex-wrap: nowrap;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    gap: 15em;
+    flex-grow: 1;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12em;
+    padding-left: 5px;;
+    padding-right: 5px;
+}
+
+.job {
+    color: pink;
+}
+.picture img {
+    clip-path: circle();
+    border: 4px solid white;
+    height: 20vw;
+    width: 20vw; 
+    max-width: 275px; 
+    max-height: 275px;
+    border-radius: 50%;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.footer {
+    color: white;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', 'Verdana';
+}
+
 
 @media (max-width: 1024px) {
     .hamburger {
@@ -160,6 +217,15 @@ a:visited{
     }
     .download button{
         padding: 10px;
+    }
+    .intro {
+        flex-direction: column;
+        font-size: 3.5vw;
+        gap: 3em;
+    }
+    .picture img {
+        height: 170px;
+        width: 170px;
     }
 
 }
