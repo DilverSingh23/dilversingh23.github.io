@@ -315,7 +315,17 @@ a:visited{
     color: white;
     font-family: 'Montserrat', 'Verdana';
     animation: fadeInUp 1.3s ease-in-out forwards;
+    display: flex;
+    background-color: blueviolet;
+    width: fit-content;
 }
+
+.internships ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 
 @media (max-width: 1024px) {
