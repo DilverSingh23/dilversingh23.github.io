@@ -25,7 +25,12 @@ body {
     display: flex;
     font-weight: 200;
     align-items: center;
-    margin-top: 5px;
+    padding-top: 5px;
+    position: sticky;    
+    top: 0;    
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */    
+    backdrop-filter: blur(5px);   
 }
 
 .navbar img {
@@ -51,6 +56,7 @@ body {
 .navbar ul li a{
     text-decoration: none;
     color: white;
+    list-style-type: none;
 }
 
 a:visited{
@@ -435,6 +441,106 @@ a:visited{
     border: 2px black solid;
 }
 
+/* ------------ Projects -------------*/
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-top .title h1{
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(10),        
+               cursor .4s step-end infinite alternate;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    color: white;
+    font-family: 'Montserrat', 'Poppins';
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    border-radius: 3em;
+}
+
+.card button {
+    font-family: "Montserrat", "Poppins";
+    color: white;
+    box-sizing: border-box;
+    height: 50px;
+    width: 300px;
+    border: 2px solid white;
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+.card button:hover {
+    text-shadow: 0.5px 0.5px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    background-color: blueviolet;
+    border: 3px solid white;
+}
+
+#worldwide {
+    position: relative;
+    background-image: url(https://worldwidealerts.github.io/images/worldwidelogo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    backdrop-filter: blur(5px);    
+    color: white;    
+}
+
+.card:hover {
+    box-sizing: border-box;
+    background-color: transparent;
+    background-blend-mode: normal;
+    backdrop-filter: blur(0px);    
+    cursor: pointer;
+    text-shadow: 0.5px 0.5px;
+    border: 2px solid white;
+}
+
+
+#worldwide h3, #worldwide h5, #worldwide button{
+    position: relative;
+    z-index: 2;
+}
+
+#queens{
+    position: relative;
+    background-image: url(images/queenslingo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    backdrop-filter: blur(5px);    
+    color: white;    
+}
+
 
 
 @media (max-width: 1024px) {
@@ -591,6 +697,23 @@ a:visited{
         overflow-x: hidden;
     }
 }
+
+@media (max-width: 870px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        height: 350px;
+        width: 350px;
+    }
+
+    #worldwide{
+        margin-top: 20px;
+    }
+}
+
 
 
 
