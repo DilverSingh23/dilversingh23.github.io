@@ -692,6 +692,9 @@ a:visited{
         font-size: large;
     
     }
+    .internships ul:nth-child(1)  {
+        margin-right: 50px;
+    }
 }
 
 @media (max-width: 456px) {
