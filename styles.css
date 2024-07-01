@@ -338,7 +338,9 @@ a:visited{
     display: flex;
     flex-direction: column;
 }
-
+.internships ul:nth-child(1)  {
+    margin-right: 30px;
+}
 /* ------------ Contact -------------*/
 .contact {
     display: flex;
@@ -691,9 +693,6 @@ a:visited{
         flex-direction: column; 
         font-size: large;
     
-    }
-    .internships ul:nth-child(1)  {
-        margin-right: 50px;
     }
 }
 
