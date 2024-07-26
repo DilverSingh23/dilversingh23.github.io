@@ -52,10 +52,10 @@ body {
     margin-left: auto;
     padding-right: 25px;
     margin-top: 30px;
+    list-style-type: none;
 }
 
 .links ul{
-    list-style-type: none;
     display: flex;
     gap: 32px;
 }
@@ -63,7 +63,6 @@ body {
 .navbar ul li a{
     text-decoration: none;
     color: white;
-    list-style-type: none;
 }
 
 a:visited{
@@ -275,6 +274,8 @@ a:visited{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap:15em;
+    margin-left: 5em;
 }
 
 .paragraph {
@@ -287,12 +288,11 @@ a:visited{
     width: 700px;
     text-align: center;
     animation: fadeInUp 1.3s ease-in-out forwards;
+    margin-left: 3em;
 }
 
 .languages {
     display: flex;
-    height: 300px;
-    width: 700px;
     flex-direction: column;
     justify-content: space-between;
     animation: fadeInUp 1.3s ease-in-out forwards;
@@ -301,11 +301,13 @@ a:visited{
 .programming {
     display: flex;
     justify-content: center;
+    width: 150px;
 }
 
 .markup {
     display: flex;
     justify-content: center;
+    width: 150px;
 }
 
 .experience {
