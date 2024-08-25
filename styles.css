@@ -295,6 +295,12 @@ a:visited{
     flex-direction: column;
     justify-content: space-between;
     animation: fadeInUp 1.3s ease-in-out forwards;
+    gap: 2em;
+}
+
+.languages img {
+    height: 120px;
+    width: 120px;
 }
 
 .programming {
