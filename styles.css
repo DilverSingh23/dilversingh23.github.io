@@ -515,9 +515,8 @@ a:visited{
     border: 3px solid white;
 }
 
-#worldwide {
+#worldwide, #queens, #betr {
     position: relative;
-    background-image: url(https://worldwidealerts.github.io/images/worldwidelogo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -526,6 +525,9 @@ a:visited{
     background-blend-mode: overlay;
     backdrop-filter: blur(5px);    
     color: white;    
+}
+#worldwide {
+    background-image: url(https://worldwidealerts.github.io/images/worldwidelogo.jpg);
 }
 
 .card:hover {
@@ -545,29 +547,12 @@ a:visited{
 }
 
 #queens{
-    position: relative;
     background-image: url(images/queenslingo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-blend-mode: overlay;
-    backdrop-filter: blur(5px);    
-    color: white;    
 }
 
 #betr {
-    position: relative;
     background-image: url(images/betrhealth.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: overlay;
-    backdrop-filter: blur(5px);    
-    color: white;   
 }
 
 
