@@ -336,16 +336,63 @@ a:visited{
     font-family: 'Montserrat', 'Verdana';
     animation: fadeInUp 1.3s ease-in-out forwards;
     display: flex;
-    background-color: blueviolet;
-    width: fit-content;
+    width: 1500px;
+    height: 650px;
 }
 
-.internships ul {
+.main {
     display: flex;
     flex-direction: column;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
 .internships ul:nth-child(1)  {
     margin-right: 30px;
+}
+
+
+.main-title {
+    display: flex;
+    border-bottom: 1.5px solid white;
+    background-color: blueviolet;
+    height: 50px;
+    gap: 0em;
+    justify-content: space-between;
+    align-items: center;
+    width: 1500px;
+}
+
+.main-title h3 {
+    margin-left: 10px;
+}
+.down-arrow {
+    display: flex;
+    color: white;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: end;
+    padding: 0;
+    font-size: 30px;
+    height: 25px;
+    width: 50px;
+}
+
+.description {
+    display: none;
+    background-color: blueviolet;
+    width: 1500px;
+    flex-direction: column;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#description-4 {
+    padding-bottom: 18px;
+}
+.down-arrow:hover {
+    cursor: pointer;
 }
 /* ------------ Contact -------------*/
 .contact {
@@ -555,6 +602,11 @@ a:visited{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 1325px) {
+    .main {
+        font-size: 14px;
+    }
+}
 
 
 @media (max-width: 1024px) {
@@ -563,9 +615,10 @@ a:visited{
         margin-right: 55px;
     }
     .links{ 
+        display: none;
         padding: 0;
         position:fixed;
-        top: -100%;
+        top: 60%;
         left: 0px;
         gap: 0;
         flex-direction: column;
@@ -618,7 +671,23 @@ a:visited{
     .icons {
         align-self: center;
     }
+    .main {
+        font-size: 12px;
+    }
 }
+
+@media (max-width: 790px) {
+    .main {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 670px) {
+    .main {
+        font-size: 9px;
+    }
+}
+
 
 @media (max-width: 414px){
     .hamburger {
@@ -725,6 +794,12 @@ a:visited{
 
     #worldwide{
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 411px) {
+    .main {
+        font-size: 8px;
     }
 }
 
