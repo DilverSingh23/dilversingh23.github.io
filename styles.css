@@ -618,7 +618,7 @@ a:visited{
         display: none;
         padding: 0;
         position:fixed;
-        top: -100%;
+        top: 6.5%;
         left: 0px;
         gap: 0;
         flex-direction: column;
