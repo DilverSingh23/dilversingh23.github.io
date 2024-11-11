@@ -562,7 +562,7 @@ a:visited{
     border: 3px solid white;
 }
 
-#worldwide, #queens, #betr {
+#doc, #queens, #betr {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -573,8 +573,9 @@ a:visited{
     backdrop-filter: blur(5px);    
     color: white;    
 }
-#worldwide {
-    background-image: url(https://worldwidealerts.github.io/images/worldwidelogo.jpg);
+#doc {
+    background-image: url(images/doctor2.png);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .card:hover {
@@ -588,9 +589,10 @@ a:visited{
 }
 
 
-#worldwide h3, #worldwide h5, #worldwide button{
+#doc h5 {
     position: relative;
     z-index: 2;
+    font-size: 15px;
 }
 
 #queens{
