@@ -9,7 +9,7 @@ export const experiences = [
             "Implemented comprehensive error handling and audit logging across AWS services using AWS CloudWatch and CloudTrail, enabling real-time monitoring and compliance reporting"
         ],
         imgSrc: "/Miora Logo.svg",
-        headerColor: "bg-purple-400"
+        headerColor: "bg-purple-400/60"
 
     },
     {
@@ -21,7 +21,7 @@ export const experiences = [
             "Led a cross-functional team through SDLC sprints, optimizing game logic by algorithm design and OOP principles"
         ],
         imgSrc: "/Jupiter Leo Logo.png",
-        headerColor: "bg-yellow-400"
+        headerColor: "bg-yellow-600/60"
 
     },
     {
@@ -33,7 +33,7 @@ export const experiences = [
             "Streamlined an event management system with upcoming jewelry exhibits and location data to optimize planning"
         ],
         imgSrc: "/Rosanna Jewels Logo.webp",
-        headerColor: "bg-rose-800"
+        headerColor: "bg-rose-800/60"
     },
     {
         companyName: "Tech Incubator at Queens College",
@@ -43,6 +43,18 @@ export const experiences = [
             "Developed a responsive news blog using HTML & CSS, serving 200+ users with underrepresented media"
         ],
         imgSrc: "QCTI Logo.jpg",
-        headerColor: "bg-red-500"
+        headerColor: "bg-red-500/60"
     }
 ]
+
+export const education = {
+    collegeName: "Macaulay Honors College, City University of New York",
+    degree: "Bachelors of Science in Computer Science",
+    graduationInfo: "Expected Graduation: May 2027",
+    bullets: [
+        "GPA: 3.8 - University Macaulay Scholar, Dean's List",
+        `Relevant Coursework: Software Engineering, Data Structures & Algorithms, Object-Oriented Programming,
+        Database Systems, Computer Architecture, Discrete Structures, Linear Algebra, Probability & Statistics`
+    ],
+    imgSrc: "/Macaulay Logo.png"
+}

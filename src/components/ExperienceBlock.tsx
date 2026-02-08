@@ -6,8 +6,8 @@ interface Props {
 export default function ExperienceBlock( { experience }: Props) {
     return (
         <>
-            <div className={`flex items-center gap-6 ${experience.headerColor}/70 backdrop-blur-md rounded-2xl rounded-b-none px-6 py-6`}>
-                <div className="flex gap-6 items-center overflow-hidden">
+            <div className={`flex items-center gap-6 ${experience.headerColor} backdrop-blur-md rounded-2xl rounded-b-none px-6 py-6`}>
+                <div className="flex gap-6 items-center max-[350px]:overflow-hidden">
                     <img src={`experience/${experience.imgSrc}`} className="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full p-2"/>
                     <div className="flex flex-col sm:flex-row items-left sm:items-center justify-center sm:gap-6">
                         <h1 className="text-lg min-[400px]:text-2xl sm:text-4xl font-extrabold tracking-wide">{experience.companyName}</h1>

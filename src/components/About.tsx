@@ -3,9 +3,9 @@ interface Props {
 }
 export default function About({ aboutRef }: Props) {
     return (
-        <div ref={aboutRef} className="min-h-fit w-full flex flex-col gap-12 py-16 px-16 bg-[url('hero/hero-bg.jpg')] text-white overflow-hidden bg-fixed">
-            <h1 className="text-4xl sm:text-5xl max-[1260px]:text-center font-extrabold tracking-wider">About Me</h1>
-            <div className="flex max-[1260px]:flex-col max-[1260px]:gap-16 justify-between items-center">
+        <div ref={aboutRef} className="min-h-fit w-full flex flex-col gap-12 py-16 px-16 bg-[url('hero/hero-bg.jpg')] text-white/90 overflow-hidden bg-fixed items-center">
+            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-wider">About Me</h1>
+            <div className="flex max-[1260px]:flex-col max-[1260px]:gap-16 justify-between items-center max-w-360">
                 <div className="text-xl font-extralight leading-loose flex flex-col gap-16 max-[1260px]:text-center min-[1260px]:w-[50%] min[1350px]:w-[60%]">
                     <p>Hi! I'm a junior computer science student at the Macaulay Honors College @ CUNY Queens College.</p>
                     <p>

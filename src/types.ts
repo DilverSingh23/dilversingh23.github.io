@@ -5,3 +5,11 @@ export interface Experience {
     imgSrc: string,
     headerColor: string
 }
+
+export interface Education {
+    collegeName: string,
+    degree: string,
+    graduationInfo: string,
+    bullets: string[]
+    imgSrc: string
+}
