@@ -2,14 +2,15 @@ import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 interface Props {
-    aboutRef: React.RefObject<HTMLDivElement | null>
+    aboutRef: React.RefObject<HTMLDivElement | null>,
+    experienceRef: React.RefObject<HTMLDivElement | null>
 }
 
-export default function Navbar({ aboutRef }: Props) {
+export default function Navbar({ aboutRef, experienceRef }: Props) {
 
     const navLinks = [
         { name: "About", onClick: handleAboutLink },
-        { name: "Experience", onClick: null },
+        { name: "Experience", onClick: handleExperienceRef },
         { name: "Projects", onClick: null },
         { name: "Skills", onClick: null },
         { name: "Contact", onClick: null },
@@ -23,7 +24,14 @@ export default function Navbar({ aboutRef }: Props) {
         if (!aboutRef.current) {
             return;
         }
-        aboutRef.current.scrollIntoView({ behavior: "smooth" })
+        aboutRef.current.scrollIntoView({ behavior: "smooth", block:"center" })
+    }
+
+    function handleExperienceRef() {
+        if (!experienceRef.current) {
+            return;
+        }
+        experienceRef.current.scrollIntoView({ behavior: "smooth", block:"center" })
     }
 
     useEffect(() => {
