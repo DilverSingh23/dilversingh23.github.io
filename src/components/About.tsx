@@ -10,7 +10,7 @@ export default function About({ aboutRef }: Props) {
                     <p>Hi! I'm a junior computer science student at the Macaulay Honors College @ CUNY Queens College.</p>
                     <p>
                         I'm passionate about building robust full-stack applications and 
-                        currently building scalable solutions for patient & clinic healthcare portals at Miora Health.
+                        currently building scalable software solutions for patient & clinic workflows at Miora Health.
                     </p>
                     <p>I'm eager to apply programming skills to industry experience and contribute to innovative projects.</p>
                 </div>
