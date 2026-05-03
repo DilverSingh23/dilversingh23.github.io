@@ -8,6 +8,7 @@ interface Props {
 }
 export default function ProjectBlock({ project }: Props) {
     const [playDemo, setPlayDemo] = useState(false);
+
     return (
         <div className="flex flex-col gap-5 items-center justify-center px-2 sm:px-6 py-6 bg-black/60 backdrop-blur-md border-gray-300 border-[0.5px] w-full rounded-lg">
             {playDemo ? (

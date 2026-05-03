@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 
 
 function App() {
+  const homeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const experienceRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
@@ -17,9 +18,9 @@ function App() {
 
   return (
     <div>
-      <Navbar aboutRef={aboutRef} experienceRef={experienceRef} projectsRef={projectsRef}
+      <Navbar homeRef={homeRef} aboutRef={aboutRef} experienceRef={experienceRef} projectsRef={projectsRef}
       skillsRef={skillsRef} contactRef={contactRef} />
-      <Hero />
+      <Hero homeRef={homeRef} />
       <About aboutRef={aboutRef} />
       <Experience experienceRef={experienceRef} />
       <Projects projectsRef={projectsRef} />
