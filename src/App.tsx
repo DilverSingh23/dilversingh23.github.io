@@ -5,19 +5,26 @@ import Navbar from './components/Navbar'
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Footer from './components/Footer';
 
 
 function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const experienceRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const skillsRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
+
   return (
     <div>
-      <Navbar aboutRef={aboutRef} experienceRef={experienceRef} />
+      <Navbar aboutRef={aboutRef} experienceRef={experienceRef} projectsRef={projectsRef}
+      skillsRef={skillsRef} contactRef={contactRef} />
       <Hero />
       <About aboutRef={aboutRef} />
       <Experience experienceRef={experienceRef} />
-      <Projects />
-      <Skills />
+      <Projects projectsRef={projectsRef} />
+      <Skills skillsRef={skillsRef} />
+      <Footer contactRef={contactRef} />
     </div>
   )
 }

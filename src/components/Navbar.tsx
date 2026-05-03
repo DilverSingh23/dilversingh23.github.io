@@ -1,40 +1,35 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 interface Props {
     aboutRef: React.RefObject<HTMLDivElement | null>,
-    experienceRef: React.RefObject<HTMLDivElement | null>
+    experienceRef: React.RefObject<HTMLDivElement | null>,
+    projectsRef: React.RefObject<HTMLDivElement | null>,
+    skillsRef: React.RefObject<HTMLDivElement | null>,
+    contactRef: React.RefObject<HTMLDivElement | null>
 }
 
-export default function Navbar({ aboutRef, experienceRef }: Props) {
+export default function Navbar({ aboutRef, experienceRef, projectsRef, skillsRef, contactRef }: Props) {
 
     const navLinks = [
-        { name: "About", onClick: handleAboutLink },
-        { name: "Experience", onClick: handleExperienceRef },
-        { name: "Projects", onClick: null },
-        { name: "Skills", onClick: null },
-        { name: "Contact", onClick: null },
+        { name: "About", onClick: () => handleNavClick(aboutRef) },
+        { name: "Experience", onClick: () => handleNavClick(experienceRef)  },
+        { name: "Projects", onClick: () => handleNavClick(projectsRef)  },
+        { name: "Skills", onClick: () => handleNavClick(skillsRef)  },
+        { name: "Contact", onClick: () => handleNavClick(contactRef) },
     ]
 
+    const homeRef = useRef<HTMLDivElement>(null)
     const [scrollY, setScrollY] = useState<number>(0)
-    const [hamburgerOpen, setHamburgerOpen] = useState<boolean>(false);
-    const [screenWidth, setScreenWidth] = useState<number>(0);
+    const [hamburgerOpen, setHamburgerOpen] = useState<boolean>(false)
+    const [screenWidth, setScreenWidth] = useState<number>(0)
 
-    function handleAboutLink() {
-        if (!aboutRef.current) {
+    function handleNavClick(refObj: React.RefObject<HTMLDivElement | null>) {
+        if (!refObj.current) {
             return;
         }
-        const aboutPosition = aboutRef.current.getBoundingClientRect().top + window.scrollY - 70
-        window.scrollTo({ top: aboutPosition, behavior:"smooth" })
-        setHamburgerOpen(false)
-    }
-
-    function handleExperienceRef() {
-        if (!experienceRef.current) {
-            return;
-        }
-        const experiencePosition = experienceRef.current.getBoundingClientRect().top + window.scrollY  - 70
-        window.scrollTo({ top: experiencePosition, behavior:"smooth" })
+        const position = refObj.current.getBoundingClientRect().top + window.scrollY - 70
+        window.scrollTo({ top: position, behavior:"smooth" })
         setHamburgerOpen(false)
     }
 
@@ -55,9 +50,9 @@ export default function Navbar({ aboutRef, experienceRef }: Props) {
 
     return (
         <nav className={`fixed w-full flex flex-col md:flex-row md:gap-16 md:items-center justify-between md:justify-center z-50 ${scrollY > 10 && "backdrop-blur-md bg-black/1"}`}>
-            <div className="flex w-full justify-between items-center max-md:p-4 md:hidden">
-                <img src="/logo.png" className="h-24 w-24" />
-                <RxHamburgerMenu className="md:hidden text-white self-center h-8 w-8 mr-3" onClick={() => setHamburgerOpen((prev: boolean) => !prev)}/>
+            <div ref={homeRef} className="flex w-full justify-between items-center max-md:p-4 md:hidden">
+                <img src="/logo.png" className="h-24 w-24 hover:cursor-pointer" onClick={() => handleNavClick(homeRef)} />
+                <RxHamburgerMenu className="md:hidden hover:cursor-pointer text-white self-center h-8 w-8 mr-3" onClick={() => setHamburgerOpen((prev: boolean) => !prev)}/>
             </div>
             <img src="/logo.png" className="h-24 w-24 max-md:hidden" />
             <ul className={`${hamburgerOpen && screenWidth < 768 ? "pt-3 w-full bg-black/1 pb-4 backdrop-blur-md flex" : "hidden"} 

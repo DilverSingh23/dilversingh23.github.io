@@ -3,7 +3,7 @@ export const experiences = [
         companyName: "Amazon",
         timeWorked: "June 2026 - Present",
         bullets: [
-            "Joining the AWS Billing team as a Software Development Engineer Intern in NYC."
+            "Joining the AWS Billing team as a Software Development Engineer Intern in NYC"
         ],
         imgSrc: "/Amazon Logo.webp",
         headerColor:"bg-orange-400/60",
