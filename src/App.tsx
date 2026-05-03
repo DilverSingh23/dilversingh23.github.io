@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Skills from './components/Skills';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <About aboutRef={aboutRef} />
       <Experience experienceRef={experienceRef} />
       <Projects />
+      <Skills />
     </div>
   )
 }

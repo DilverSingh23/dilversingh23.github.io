@@ -1,3 +1,5 @@
+import type { ReactElement } from "react"
+
 export interface Experience {
     companyName: string,
     timeWorked: string,
@@ -21,4 +23,9 @@ export interface Project {
     github: string,
     demo: string,
     tags: string[]
+}
+
+export interface Skill {
+    name: string,
+    icon: ReactElement
 }
