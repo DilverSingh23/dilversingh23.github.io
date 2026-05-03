@@ -5,7 +5,8 @@ export interface Experience {
     timeWorked: string,
     bullets: string[],
     imgSrc: string,
-    headerColor: string
+    headerColor: string,
+    positionName: string
 }
 
 export interface Education {
