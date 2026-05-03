@@ -10,6 +10,15 @@ export interface Education {
     collegeName: string,
     degree: string,
     graduationInfo: string,
-    bullets: string[]
+    bullets: string[],
     imgSrc: string
+}
+
+export interface Project {
+    projectName: string,
+    description: string,
+    image: string,
+    github: string,
+    demo: string,
+    tags: string[]
 }

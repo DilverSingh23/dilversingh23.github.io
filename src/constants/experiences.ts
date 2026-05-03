@@ -1,11 +1,21 @@
 export const experiences = [
     { 
+        companyName: "Amazon",
+        timeWorked: "June 2026 - Present",
+        bullets: [
+            "Joining the AWS Billing team as a Software Development Engineer Intern in NYC."
+        ],
+        imgSrc: "/Amazon Logo.webp",
+        headerColor:"bg-orange-400/60"
+    },
+    { 
         companyName: "Miora Health",
         timeWorked: "Sep. 2025 - Present",
         bullets: [
             "Developed a healthcare portal with React/TypeScript, Node.js, and AWS cloud infrastructure, to ensure HIPAA compliance, data integrity, and scalability for patients and clinics",
             "Engineered AWS Lambda middleware with JWT authentication and role-based access between AWS Cognito and API Gateway, reducing unauthorized requests by 99% across 65 HTTP endpoints",
             "Constructed a scalable notification and email delivery system using AWS EventBridge and Amazon SES enabling automated weekly emails and event-driven dispatch for 30+ in-portal notifications",
+            "Automated test kit delivery status updates with an hourly cron job that polls the USPS and Shipstation APIs, saving ∼5 hours/week of manual upkeep",
             "Implemented comprehensive error handling and audit logging across AWS services using AWS CloudWatch and CloudTrail, enabling real-time monitoring and compliance reporting"
         ],
         imgSrc: "/Miora Logo.svg",

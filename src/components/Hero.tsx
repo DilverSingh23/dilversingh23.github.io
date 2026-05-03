@@ -10,7 +10,7 @@ export default function Hero() {
 
                 <h1 className="text-5xl sm:text-6xl font-extralight tracking-widest">Dilver Singh</h1>
                 <h1 className="text-sm min-[380px]:text-base sm:text-2xl font-extralight tracking-[0.03em] sm:tracking-[0.08em]">
-                    SWE Intern @ Miora | Aspiring Software Engineer
+                    Incoming SDE Intern @ Amazon
                 </h1>
                 
                 <div className="flex flex-row gap-6 text-gray-300 hover:cursor-pointer shadow-2xl">
