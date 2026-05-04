@@ -16,7 +16,7 @@ export default function Hero({ homeRef }: Props) {
             transition={{ duration: 1.5 }}
             className="flex flex-col flex-1 gap-12 justify-center items-center h-full w-full pt-16 h-[700px]:flex text-gray-300 font-inter">
                 <div>
-                    <img src="hero/profilepic.jpg" alt="Profile Image" 
+                    <img src="hero/pfp.png" alt="Profile Image" 
                     className="h-60 w-60 sm:h-76 sm:w-76 brightness-65 border-6 border-purple-200 rounded-full object-cover scale-95" />
                 </div>
 

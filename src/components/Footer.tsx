@@ -13,7 +13,7 @@ export default function Footer({ contactRef }: Props) {
             <span className="font-light max-sm:hidden">|</span>
             <div className="flex items-center gap-1">
                 <MdOutlineMail className="h-6 w-6" />
-                <a href="mailto:dsinghh23@gmail.com" className=" text-lg sm:text-xl font-extralight">dsinghh23@gmail.com</a>
+                <a href="mailto:dsinghh23@gmail.com" className="text-lg sm:text-xl font-extralight">dsinghh23@gmail.com</a>
             </div>
         </div>
     )
