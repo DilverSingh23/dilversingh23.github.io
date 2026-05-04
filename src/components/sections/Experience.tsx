@@ -9,7 +9,7 @@ interface Props {
 }
 export default function Experience({ experienceRef }: Props) {
     return (
-        <div ref={experienceRef} className="min-h-fit py-16 px-5 sm:px-12 bg-[url('experience/experience-bg.jpg')] 
+        <div ref={experienceRef} className="min-h-fit py-16 px-5 sm:px-12 bg-[url('/experience/experience-bg.jpg')] 
         bg-fixed overflow-hidden bg-cover bg-center">
             <motion.div
             className="flex flex-col items-center text-white/90"

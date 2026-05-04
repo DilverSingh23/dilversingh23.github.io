@@ -8,7 +8,7 @@ interface Props {
 export default function Hero({ homeRef }: Props) {
     return (
         <div 
-        ref={homeRef} className="min-h-screen w-full flex flex-col overflow-hidden bg-[url('hero/hero-bg.jpg')] bg-center bg-cover z-0 relative">
+        ref={homeRef} className="min-h-screen w-full flex flex-col overflow-hidden bg-[url('/hero/hero-bg.jpg')] bg-center bg-cover z-0 relative">
             <motion.div 
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}

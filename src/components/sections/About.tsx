@@ -5,7 +5,7 @@ interface Props {
 }
 export default function About({ aboutRef }: Props) {
     return (
-        <div ref={aboutRef} className="min-h-fit py-16 px-16 bg-[url('hero/hero-bg.jpg')] bg-fixed bg-cover bg-center">
+        <div ref={aboutRef} className="min-h-fit py-16 px-16 bg-[url('/hero/hero-bg.jpg')] bg-fixed bg-cover bg-center">
             <motion.div className="w-full flex flex-col gap-12 items-center text-white/90 overflow-hidden" 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -9,7 +9,7 @@ interface Props {
 
 export default function Skills({ skillsRef }: Props) {
     return (
-        <div ref={skillsRef} className="min-h-fit gap-12 py-16 px-16 bg-[url('about/about-bg.jpg')] bg-fixed bg-center bg-cover">
+        <div ref={skillsRef} className="min-h-fit gap-12 py-16 px-16 bg-[url('/about/about-bg.jpg')] bg-fixed bg-center bg-cover">
             <motion.div
             className="w-full flex flex-col items-center text-white/90"
             initial={{ opacity: 0, y: -50 }}
