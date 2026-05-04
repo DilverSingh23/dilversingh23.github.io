@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { TypingAnimation } from "./ui/TypingAnimation";
+import { TypingAnimation } from "../animations/TypingAnimation";
 import { motion } from "motion/react";
 
 interface Props {

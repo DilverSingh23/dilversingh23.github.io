@@ -1,11 +1,11 @@
 import { useRef } from 'react'
-import About from './components/About'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Footer from './components/Footer';
+import About from './components/sections/About'
+import Hero from './components/sections/Hero'
+import Navbar from './components/elements/Navbar'
+import Experience from './components/sections/Experience';
+import Projects from './components/sections/Projects';
+import Skills from './components/sections/Skills';
+import Footer from './components/elements/Footer';
 
 
 function App() {

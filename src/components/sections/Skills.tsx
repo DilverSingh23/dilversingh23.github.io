@@ -1,6 +1,6 @@
-import { skills } from "../constants/skills";
-import type { Skill } from "../types";
-import SkillBlock from "./SkillBlock";
+import { skills } from "../../constants/skills";
+import type { Skill } from "../../types";
+import SkillBlock from "../elements/SkillBlock";
 import { motion } from "motion/react";
 
 interface Props {

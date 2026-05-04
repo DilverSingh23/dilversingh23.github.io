@@ -1,7 +1,7 @@
-import ExperienceBlock from "./ExperienceBlock";
-import { education, experiences } from "../constants/experiences";
-import type { Experience } from "../types";
-import EducationBlock from "./EducationBlock";
+import ExperienceBlock from "../elements/ExperienceBlock";
+import { education, experiences } from "../../constants/experiences";
+import type { Experience } from "../../types";
+import EducationBlock from "../elements/EducationBlock";
 import { motion } from "motion/react";
 
 interface Props {

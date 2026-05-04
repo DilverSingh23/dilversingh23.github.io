@@ -1,6 +1,6 @@
-import { projects } from "../constants/projects";
-import type { Project } from "../types";
-import ProjectBlock from "./ProjectBlock";
+import { projects } from "../../constants/projects";
+import type { Project } from "../../types";
+import ProjectBlock from "../elements/ProjectBlock";
 import { motion } from "motion/react";
 
 interface Props {

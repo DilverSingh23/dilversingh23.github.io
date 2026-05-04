@@ -1,5 +1,5 @@
 import { useState } from "react"
-import type { Project } from "../types"
+import type { Project } from "../../types"
 import { CiPause1, CiPlay1 } from "react-icons/ci";
 import { GrGithub } from "react-icons/gr";
 
